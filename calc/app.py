@@ -17,13 +17,13 @@ def subNum():
     return str(sub(a,b))
 
 @app.route('/mult')
-def addMult():
+def multNum():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(mult(a,b))
 
 @app.route('/div')
-def addDiv():
+def divNum():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(div(a,b))
