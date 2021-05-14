@@ -5,31 +5,31 @@ from operations import *
 app = Flask(__name__)
 
 @app.route('/add')
-def addNum():
+def add_num():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(add(a,b))
 
 @app.route('/sub')
-def subNum():
+def sub_num():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(sub(a,b))
 
 @app.route('/mult')
-def multNum():
+def mult_num():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(mult(a,b))
 
 @app.route('/div')
-def divNum():
+def div_num():
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(div(a,b))
 
 @app.route('/math/<domath>')
-def mathFunc(domath):
+def math_func(domath):
     a = int(request.args['a'])
     b = int(request.args['b'])
     return str(eval(domath)(a,b))
