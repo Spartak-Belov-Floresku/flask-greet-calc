@@ -3,15 +3,15 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/welcome')
-def welcomeFank():
+def welcome_fank():
     return 'welcome'
 
 
 @app.route('/welcome/home')
-def welcomeHomeFank():
+def welcomeHome_fank():
     return 'welcome home'
 
 
 @app.route('/welcome/back')
-def welcomeBackFank():
+def welcome_back_fank():
     return 'welcome back'
